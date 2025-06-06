@@ -36,6 +36,7 @@ class HealthTips {
             System.out.println("- " + tip);
         }
     }
+<<<<<<< HEAD
 }
 
 class PatientRecord {
@@ -59,10 +60,12 @@ class PatientRecord {
         System.out.println("Symptoms: " + sym);
     }
 }
+=======
+>>>>>>> b3
 
 public class AIHealthAssistant {
     static List<PatientRecord> records = new ArrayList<>();
-    static Scanner scanner = new Scanner(System.in);
+    static Scanner sc = new Scanner(Syst.in);
 
     public static void main(String[] args) {
         int choice;
@@ -102,7 +105,7 @@ public class AIHealthAssistant {
         System.out.print("Enter your choice: ");
     }
 
-<<<<<<< HEAD
+
     public static void createPatientRecord() {
         System.out.print("Enter name: ");
         String name = scanner.nextLine();
@@ -138,7 +141,6 @@ public class AIHealthAssistant {
     }
 
  
-=======
         public static void performSymptomCheck() {
         System.out.println("Enter symptoms for check (type 'done' to finish):");
         List<String> symptoms = new ArrayList<>();
@@ -151,5 +153,4 @@ public class AIHealthAssistant {
         System.out.println("\nPrediction Result: " + result);
     }
 }
->>>>>>> b2
 

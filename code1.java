@@ -1,4 +1,4 @@
-// AIHealthAssistant.java
+i/ AIHealthAssistant.java
 // A 500-line Java program simulating an AI-based health assistant
 
 import java.util.*;
@@ -58,11 +58,10 @@ class PatientRecord {
         System.out.println("Gender: " + gender);
         System.out.println("Symptoms: " + sym);
     }
-}
 
 public class AIHealthAssistant {
     static List<PatientRecord> records = new ArrayList<>();
-    static Scanner scanner = new Scanner(System.in);
+    static Scanner sc = new Scanner(Syst.in);
 
     public static void main(String[] args) {
         int choice;
