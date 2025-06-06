@@ -36,33 +36,10 @@ class HealthTips {
             System.out.println("- " + tip);
         }
     }
-}
-
-class PatientRecord {
-    String name;
-    int age;
-    String gender;
-    List<String> symptoms;
-
-    public PatientRecord(String name, int age, String gender, List<String> symptoms) {
-        this.name = name;
-        this.age = age;
-        this.gender = gender;
-        this.symptoms = symptoms;
-    }
-
-    public void displayRecord() {
-        System.out.println("\n=== Patient Record ===");
-        System.out.println("Name: " + name);
-        System.out.println("Age: " + age);
-        System.out.println("Gender: " + gender);
-        System.out.println("Symptoms: " + symptoms);
-    }
-}
 
 public class AIHealthAssistant {
     static List<PatientRecord> records = new ArrayList<>();
-    static Scanner scanner = new Scanner(System.in);
+    static Scanner sc = new Scanner(Syst.in);
 
     public static void main(String[] args) {
         int choice;
