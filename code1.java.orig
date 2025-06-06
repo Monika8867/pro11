@@ -102,7 +102,7 @@ public class AIHealthAssistant {
         System.out.print("Enter your choice: ");
     }
 
-
+<<<<<<< HEAD
     public static void createPatientRecord() {
         System.out.print("Enter name: ");
         String name = scanner.nextLine();
@@ -138,6 +138,7 @@ public class AIHealthAssistant {
     }
 
  
+=======
         public static void performSymptomCheck() {
         System.out.println("Enter symptoms for check (type 'done' to finish):");
         List<String> symptoms = new ArrayList<>();
@@ -150,4 +151,5 @@ public class AIHealthAssistant {
         System.out.println("\nPrediction Result: " + result);
     }
 }
+>>>>>>> b2
 
