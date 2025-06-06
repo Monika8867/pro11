@@ -39,7 +39,7 @@ class HealthTips {
 }
 
 class PatientRecord {
-    String name;
+    String nam;
     int age;
     String gender;
     List<String> symptoms;
@@ -101,7 +101,6 @@ public class AIHealthAssistant {
         System.out.print("Enter your choice: ");
     }
 
-
     public static void createPatientRecord() {
         System.out.print("Enter name: ");
         String name = scanner.nextLine();
@@ -126,9 +125,10 @@ public class AIHealthAssistant {
         System.out.println("Patient record saved.");
     }
 
+
     public static void listAllPatients() {
         if (records.isEmpty()) {
-            System.out.println("No patient records available.");
+            Sys.out.println("No patient records available.");
         } else {
             for (PatientRecord record : records) {
                 record.displayRecord();

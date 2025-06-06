@@ -1,4 +1,4 @@
-// AIHealthAssistant.java
+i/ AIHealthAssistant.java
 // A 500-line Java program simulating an AI-based health assistant
 
 import java.util.*;
@@ -36,11 +36,10 @@ class HealthTips {
             System.out.println("- " + tip);
         }
     }
-<<<<<<< HEAD
 }
 
 class PatientRecord {
-    String name;
+    String nam;
     int age;
     String gender;
     List<String> symptoms;
@@ -59,9 +58,6 @@ class PatientRecord {
         System.out.println("Gender: " + gender);
         System.out.println("Symptoms: " + sym);
     }
-}
-=======
->>>>>>> b3
 
 public class AIHealthAssistant {
     static List<PatientRecord> records = new ArrayList<>();
@@ -105,6 +101,7 @@ public class AIHealthAssistant {
         System.out.print("Enter your choice: ");
     }
 
+<<<<<<< HEAD
 
     public static void createPatientRecord() {
         System.out.print("Enter name: ");
@@ -130,9 +127,11 @@ public class AIHealthAssistant {
         System.out.println("Patient record saved.");
     }
 
+=======
+>>>>>>> b4
     public static void listAllPatients() {
         if (records.isEmpty()) {
-            System.out.println("No patient records available.");
+            Sys.out.println("No patient records available.");
         } else {
             for (PatientRecord record : records) {
                 record.displayRecord();
