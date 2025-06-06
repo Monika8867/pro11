@@ -136,16 +136,5 @@ public class AIHealthAssistant {
         }
     }
 
-    public static void performSymptomCheck() {
-        System.out.println("Enter symptoms for check (type 'done' to finish):");
-        List<String> symptoms = new ArrayList<>();
-        while (true) {
-            String input = scanner.nextLine();
-            if (input.equalsIgnoreCase("done")) break;
-            symptoms.add(input.toLowerCase());
-        }
-        String result = SymptomChecker.checkSymptoms(symptoms);
-        System.out.println("\nPrediction Result: " + result);
-    }
-}
+ 
 
