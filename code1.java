@@ -56,7 +56,7 @@ class PatientRecord {
         System.out.println("Name: " + name);
         System.out.println("Age: " + age);
         System.out.println("Gender: " + gender);
-        System.out.println("Symptoms: " + symptoms);
+        System.out.println("Symptoms: " + sym);
     }
 }
 
@@ -102,41 +102,7 @@ public class AIHealthAssistant {
         System.out.print("Enter your choice: ");
     }
 
-    public static void createPatientRecord() {
-        System.out.print("Enter name: ");
-        String name = scanner.nextLine();
-
-        System.out.print("Enter age: ");
-        int age = scanner.nextInt();
-        scanner.nextLine();
-
-        System.out.print("Enter gender: ");
-        String gender = scanner.nextLine();
-
-        List<String> symptoms = new ArrayList<>();
-        System.out.println("Enter symptoms (type 'done' to finish):");
-        while (true) {
-            String symptom = scanner.nextLine();
-            if (symptom.equalsIgnoreCase("done")) break;
-            symptoms.add(symptom.toLowerCase());
-        }
-
-        PatientRecord record = new PatientRecord(name, age, gender, symptoms);
-        records.add(record);
-        System.out.println("Patient record saved.");
-    }
-
-    public static void listAllPatients() {
-        if (records.isEmpty()) {
-            System.out.println("No patient records available.");
-        } else {
-            for (PatientRecord record : records) {
-                record.displayRecord();
-            }
-        }
-    }
-
-    public static void performSymptomCheck() {
+        public static void performSymptomCheck() {
         System.out.println("Enter symptoms for check (type 'done' to finish):");
         List<String> symptoms = new ArrayList<>();
         while (true) {
